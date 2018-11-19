@@ -1,14 +1,14 @@
 {
-  "name": "react-native-unmount-animatable",
+  "name": "react-native-animatable-unmountable",
   "description": "Unmount animations for oblador/react-native-animatable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "index.js",
   "author": {
     "name": "Przemek Sobstel",
     "email": "przemek@sobstel.org"
   },
-  "homepage": "https://github.com/hydropuzzle/react-native-unmount-animatable",
+  "homepage": "https://github.com/hydropuzzle/react-native-animatable-unmountable",
   "dependencies": {
     "react-native-animatable": "^1.0.0"
   }
