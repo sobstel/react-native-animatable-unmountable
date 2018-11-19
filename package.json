@@ -1,7 +1,7 @@
 {
   "name": "react-native-animatable-unmountable",
-  "description": "Unmount animations for oblador/react-native-animatable",
-  "version": "0.0.2",
+  "description": "Declarative transitions and animations for React Native (with unmount effect)",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "index.js",
   "author": {
@@ -10,6 +10,7 @@
   },
   "homepage": "https://github.com/hydropuzzle/react-native-animatable-unmountable",
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react-native-animatable": "^1.0.0"
   }
 }
