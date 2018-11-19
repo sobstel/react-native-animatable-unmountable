@@ -12,5 +12,15 @@
   "dependencies": {
     "prop-types": "^15.5.10",
     "react-native-animatable": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "mobile",
+    "ios",
+    "android",
+    "animatable",
+    "transition",
+    "animation"
+  ]
 }
