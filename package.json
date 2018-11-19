@@ -1,7 +1,7 @@
 {
   "name": "react-native-animatable-unmountable",
   "description": "Declarative transitions and animations for React Native (with unmount effect)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "index.js",
   "author": {

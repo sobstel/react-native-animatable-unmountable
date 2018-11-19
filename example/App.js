@@ -1,16 +1,34 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import unmountAnimatable from 'react-native-unmount-animatable';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import * as Animatable from 'react-native-animatable-unmountable';
 
-const AnimatableView = unmountAnimatable(View);
 
 export default class App extends React.Component {
-  render() {
+  state = {
+    mounted: true
+  }
+
+  render () {
     return (
-      <AnimatableView style={styles.container} animation='fadeIn'>
-        <Text>Open up App.js to start working on your app!</Text>
-      </AnimatableView>
+      <View style={styles.container}>
+        <Button title="Toggle" onPress={this.onPress}  />
+        <View style={styles.textContainer}>
+          <Animatable.Text
+            mounted={this.state.mounted}
+            animation='flipInY'
+            duration={2000}
+            unmountAnimation='flipOutY'
+            unmountDuration={2000}
+          >
+            If you're going through hell, keep going
+          </Animatable.Text>
+        </View>
+      </View>
     );
+  }
+
+  onPress = () => {
+    this.setState({ mounted: !this.state.mounted });
   }
 }
 
@@ -21,4 +39,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  textContainer: {
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
 });

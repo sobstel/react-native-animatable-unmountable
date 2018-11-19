@@ -4246,11 +4246,12 @@ react-devtools-core@3.3.4:
     shell-quote "^1.6.1"
     ws "^3.3.1"
 
-react-native-animatable-unmountable@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-animatable-unmountable/-/react-native-animatable-unmountable-0.0.2.tgz#7e5c868615d016d03635e0b523a5ba77ef366390"
-  integrity sha512-l4N7PYYwp2ptab2YbvOxJAYCitMEiTjgJR3Q47PwXLmARa2INUiwPE1dil/WeiKGmsFnQzj0bljPgqsO7K/3jQ==
+react-native-animatable-unmountable@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-animatable-unmountable/-/react-native-animatable-unmountable-0.1.1.tgz#6bd87d4cc583b835020aa07dd7edc01ec2f2f2b8"
+  integrity sha512-Vwh8K6qejsHOz3/JxWqcGcP6ZdjVojBVMJBTre/xdUMQJE9jlXm10SwJqrvFhpW4pPF33GXCBIbhyNIgPlipEg==
   dependencies:
+    prop-types "^15.5.10"
     react-native-animatable "^1.0.0"
 
 react-native-animatable@^1.0.0:
@@ -4274,7 +4275,7 @@ react-native-gesture-handler@1.0.9:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-react-native-maps@expo/react-native-maps#v0.22.1-exp.0:
+"react-native-maps@github:expo/react-native-maps#v0.22.1-exp.0":
   version "0.22.1"
   resolved "https://codeload.github.com/expo/react-native-maps/tar.gz/e6f98ff7272e5d0a7fe974a41f28593af2d77bb2"
 
