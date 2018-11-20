@@ -27,8 +27,8 @@ MyCustomComponent = Animatable.animatableUnmountable(MyCustomComponent);
 
 ### Unmount animations
 
-Key is to define `mounted` property and set it true (mounted) or false (unmounted).
-See example.
+The key is to define `mounted` prop and have it set to `true` (mounted) or `false` (unmounted).
+When `mounted` prop changes value from `true` to `false`, unmount animation is triggered, then - after animation ends - the element gets hidden.
 
 ```html
 <Animatable.Text
@@ -50,6 +50,11 @@ See example.
 |**`unmountAnimation`**|Name of the unmount animation.|*None*|
 |**`unmountDuration`**|For how long the unmount animation will run (milliseconds). |`1000`|
 |**`unmountDelay`**|Optionally delay the unmount animation (milliseconds).|`0`|
+|**`onUnmountAnimationBegin`**|A function that is called when the unmount animation has been started. |*None*|
+|**`onUnmountAnimationEnd`**|A function that is called when the unmount animation has been completed successfully or cancelled. Function is called with an `endState` argument, refer to `endState.finished` to see if the animation completed or not. |*None*|
+|**`innerRef`**|Reference to inner AnimatableComponent element. |*None*|
+|**`didMount`**|Triggered right after entrance animation ends. |*None*|
+|**`didUnmount`**|Triggered right after unmount (exit) animation ends. |*None*|
 
 ## Example
 

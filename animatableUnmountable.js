@@ -6,11 +6,6 @@
  * - true : true - mounted (mounted)
  * - false : true - intermediate (unmounting/exiting)
  * - false : false - hidden (unmounted)
- *
- * Properties
- *
- * - didMount -> right after entrance animation ends
- * - didUnmount -> right after unmount (exit) animation ends
  */
 
 import React, { Component } from 'react';
@@ -40,7 +35,7 @@ export default function animatableUnmountable(WrappedComponent) {
       onUnmountAnimationBegin: () => {},
       onUnmountAnimationEnd: endState => {},
       unmountAnimation: null,
-      unmountDuration: null,
+      unmountDuration: 1000,
     };
 
     container = null;
