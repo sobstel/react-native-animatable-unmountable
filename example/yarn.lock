@@ -4247,9 +4247,9 @@ react-devtools-core@3.3.4:
     ws "^3.3.1"
 
 react-native-animatable-unmountable@^0.1.0:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/react-native-animatable-unmountable/-/react-native-animatable-unmountable-0.1.2.tgz#5994e6235bd3588c0e5a13781d01431d142f0737"
-  integrity sha512-HCXdS0QcVABOo27moZ0vNwQ0Rkn0BzRCbJA0SqI7pLNc30Y4RNPMbcn89fYl8crHnw+eFQSAKSiDXSTyNKOn4A==
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/react-native-animatable-unmountable/-/react-native-animatable-unmountable-0.1.3.tgz#25e6d3a1fc68e11bf6b0aa26a72a9e266608ff95"
+  integrity sha512-HlqC7H1kYXSGPfNBhLehPfC9/nL119Ig7OBFh/0jAxxcrue9Loz4jGdfhfoMvUzBtIN41LJoGi/tKR1Kdf0pdw==
   dependencies:
     prop-types "^15.5.10"
     react-native-animatable "^1.0.0"
