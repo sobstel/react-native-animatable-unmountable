@@ -8,7 +8,7 @@
     "name": "Przemek Sobstel",
     "email": "przemek@sobstel.org"
   },
-  "homepage": "https://github.com/hydropuzzle/react-native-animatable-unmountable",
+  "homepage": "https://github.com/sobstel/react-native-animatable-unmountable",
   "dependencies": {
     "prop-types": "^15.5.10",
     "react-native-animatable": "^1.0.0"
