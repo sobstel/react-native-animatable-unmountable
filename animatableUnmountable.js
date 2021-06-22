@@ -92,7 +92,11 @@ export default function animatableUnmountable(WrappedComponent) {
 
       const unmountDuration = this.props.unmountDuration || this.props.duration * 0.75;
 
-      this.container[this.props.unmountAnimation](unmountDuration).then(endState => {
+      const animation = typeof this.props.unmountAnimation === 'string'
+        ? this.container[this.props.unmountAnimation](unmountDuration)
+        : this.container.animate(this.props.unmountAnimation, unmountDuration)
+
+      animation.then(endState => {
         // don't change if changed to mounted in the meantime
         // cannot be: prop.mounted=true, state.mounted=false
         if (!this.props.mounted) {
